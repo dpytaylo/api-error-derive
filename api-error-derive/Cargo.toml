@@ -1,0 +1,15 @@
+[package]
+name = "api-error-derive"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+api-error-derive-macro = { path = "../api-error-derive-macro" }
+http = "1.0"
+
+[dev-dependencies]
+axum = "0.7"
+thiserror = "1"
+
+[features]
+axum = ["api-error-derive-macro/axum"]
